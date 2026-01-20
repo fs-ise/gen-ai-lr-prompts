@@ -1,0 +1,49 @@
+---
+title: "Problem formulation"
+---
+
+##  Prompt to identify prior review papers based on citation context
+
+- Data extraction
+- Exploratory prompting
+- LLMs with file upload and large context window (> 100,000 tokens a)
+- Upload a selection of relevant papers (PDFs)1
+
+```Markdown
+Considering the in-text citations of each paper, do the papers refer to
+prior (standalone) literature reviews? Which ones? Consider all PDFs and
+state explicitly when you encounter problems in extracting text from the
+PDF document.
+```
+
+## Prompt to extract concept definitions
+
+- Data extraction
+- Zero-shot prompting
+- LLMs with file upload and large context window (> 100,000 tokens)
+- Upload a selection of relevant papers (PDFs)7
+
+```Markdown
+From the PDFs provided, extract the definitions for [add description here].
+Provide a direct quote if remote work is defined in the paper. If there is none,
+state that there is no clear definition of [add topic label here]in the PDF.
+```
+
+## Prompt to assess the fit of a selected review type
+
+- Text analysis and recommendations
+- Exploratory prompting
+- LLMs with file upload and large context window (> 100,000 tokens)
+- Upload a selection of relevant papers (PDFs) 7
+
+```Markdown
+Definition: A "qualitative systematic review" aims at collecting and
+aggregating empirical evidence from primary studies to test a narrowly
+defined hypothesis or model. It is suitable for established topics for
+which the research questions are narrow and the focus is on qualitative
+or quantitative empirical studies.
+Assess a review project focusing on [add description here]. Would a
+qualitative systematic review be a suitable review type? Provide reasons
+related to the topic maturity, the scope of research questions, and the
+nature of prior work.
+```

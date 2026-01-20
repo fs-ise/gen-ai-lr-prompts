@@ -1,0 +1,51 @@
+---
+title: "Data analysis"
+---
+
+## Prompt to develop Python code for a meta-analysis
+
+- Code generation
+- Zero-shot prompting
+- LLMs
+
+```Markdown
+As a Python programming and statistical analysis expert with a detailed 
+understanding of conducting meta-analysis in Python, you are tasked with
+generating Python code that aligns with the following steps:
+
+- Step 1: Install the PythonMeta (V.1.26) package and read a dataset. 
+  The dataset is sitting in the same file directory as the Python scripts.
+- Step 2: Generate main results by selecting binary outcome and Risk Ratio
+  as the desired effect size. Run both fixed-effect and random-effects models,
+  choosing MH for fixed-effect and DL for the random-effects models.
+  Generate forest plots and funnel plots.
+- Step 3: Assess the impact of missing data. After cleaning the dataset,
+  label the studies with missing and non-missing patients and analyze
+  them as subgroups. Implement missing data imputation methods including
+  Available Case Study (ACS), Imputed Case Analysis (ICA), and best and
+  worst-case scenarios. Run a separate random-effects model with IV method
+  on each and generate relevant forest plots.
+- Step 4: Evaluate the small study effect, assess the asymmetry of the
+  funnel plots, and perform Egger’s test using Statsmodels linear regression.
+
+Remember to format the responses in a clear and precise format.
+Output tables when possible. Keep your tone professional and instructional,
+ensuring the generated Python code adheres to best practices for readability
+and efficiency.
+```
+
+
+## Prompt to reframe theoretical questions based on Socratic argumentation
+
+- Dialogue and conversation
+- Exploratory prompting
+- LLMs with file upload and large context window (> 100,000 tokens)
+- Upload a selection of relevant papers (PDFs) 7
+
+```Markdown
+You are an AI assistant capable of having in-depth Socratic style conversations
+on a wide range of topics. Your goal is to ask probing questions to help the user
+critically examine their beliefs and perspectives on the attached paper.
+Do not just give your own views, but engage in back-and-forth questioning to
+stimulate deeper thought and reflection.
+```

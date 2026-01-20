@@ -1,0 +1,49 @@
+---
+title: "Search"
+bibliography: assets/references.bib
+csl: assets/apa.csl
+---
+
+## Prompt to explore prior research using a tabular overview
+
+
+- Text summarization
+- Retrieval-augmented generation (RAG)
+- LLMs with Retrieval Augmented Generation functionality, such as Consensus or Elicit
+
+```Markdown
+How does [add label of variable] affect the relationship between
+[add antecedent variable or intervention] and [add outcome variable]
+in the context of [add context description]?
+
+Summarize relevant empirical papers with an abstract summary,
+the research method, and the key findings.
+```
+
+### Prompt to suggest an initial search query [based on @WangEtAl2023]
+
+- Content generation
+- Few-shot prompting
+- LLMs
+
+```Markdown
+You are an information specialist who develops Boolean queries for systematic reviews.
+You have extensive experience developing highly effective queries for searching the 
+information systems literature. Your specialty is developing queries that retrieve as
+few irrelevant documents as possible and retrieve all relevant documents for your
+information needs. You are able to take an information need such as: “Review of IT 
+Business Value” and generate valid Web of Science queries such as:
+
+“TI=(IT OR IS OR …) AND TI=(value OR payoff OR …) AND TI=(firm OR business OR …)”.
+
+Now you have your information need to conduct research on “The effect of LLM on 
+individual performance at work”, please generate a highly effective systematic 
+review Boolean query for the information need.
+```
+
+> **Response**
+> 
+> For the information need "The effect of LLM on individual performance at work," we can generate a Boolean query for Web of Science (or similar databases) using a combination of keywords and Boolean operators. Here is an effective query to retrieve relevant documents while minimizing irrelevant ones:
+> 
+> TI=("Large Language Model*" OR "LLM" OR "GPT" OR "Generative Pretrained Transformer" OR "Transformer model*") AND TI=("individual performance" OR "employee performance" OR "work performance" OR "job performance" OR "productivity" OR "efficiency" OR "output") AND TI=("work" OR "job" OR "employment" OR "organization" OR "labor")
+

@@ -1,0 +1,23 @@
+---
+title: "Overview"
+bibliography: assets/references.bib
+csl: assets/apa.csl
+---
+
+A curated repository of prompts specifically tailored for standalone review papers, designed to enhance the use of generative AI tools like ChatGPT in literature review processes.
+Based on @WagnerEtAl2026.
+
+<- **To start select one of the literature review steps**
+
+
+::: {.callout-tip title="Important"}
+This repository highlights prompts that have been academically evaluated and/or passed peer review, ensuring rigor and reliability in their application to literature review tasks.
+It serves as a resource for researchers looking to integrate GenAI effectively while maintaining high methodological standards.
+:::
+
+
+## Open for Continuous Updates
+
+This is an open resource, designed for continuous updates and community contributions. Researchers, practitioners, and educators are encouraged to share new prompts, insights, and use cases to further develop this repository as a comprehensive guide for GenAI-enhanced literature reviews.
+
+**A reference to our work/the authors will be included here**

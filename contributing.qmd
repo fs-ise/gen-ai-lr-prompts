@@ -1,0 +1,47 @@
+---
+title: "Contributing"
+---
+
+## Guidelines
+
+**Prompts**  
+- Prompts reported in published and peer-reviewed papers only.  
+- If a prompt has been used in practice (e.g., to assist in specific review tasks), briefly describe the use case and its outcomes.  
+- Indicate any limitations or specific requirements for the prompt to work effectively (e.g., tools needed, data formats).
+- Prompts from influential preprints may also be considered, provided their effectiveness has been clearly demonstrated.
+- Contributions should include information on how the prompt was evaluated (e.g., in academic papers, systematic reviews, or practical use cases).  
+- If applicable, include links to resources showcasing the evaluation process or results.
+
+## Adding a New Prompt
+
+If you would like to add a new prompt, follow these steps:  
+
+1. Click the [edit button](https://github.com/digital-work-lab/gen-ai-lr-prompts/edit/main/README.md).  
+2. Add your contribution in Markdown format under the appropriate section. Include:  
+   - The intended use case (e.g., summarization, Boolean query generation).  
+   - The prompt text.  
+   - An example output as a quote.
+   - A reference with a brief description of its application and evaluation.  
+3. Use the "Preview changes" tab to ensure your contribution is formatted correctly.  
+4. Provide a name for your proposed change and an optional description. Indicate that you would like to "Create a new branch for this commit and start a pull request," then click "Propose file change."
+
+
+## Prompt template
+
+> Role: You are [ROLE].
+>
+> Context: [CONTEXT]
+>
+> Task: [WHAT YOU WANT]
+>
+> Constraints:
+> - Use only the provided context; if missing info, list questions first
+> - Cite uncertainties explicitly
+> - Do not invent citations
+>
+> Output format:
+> - [BULLETS/TABLE/JSON]
+>
+> Quality checks:
+> - [CHECKLIST]
+

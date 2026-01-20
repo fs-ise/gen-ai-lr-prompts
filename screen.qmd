@@ -1,0 +1,43 @@
+---
+title: "Screen"
+bibliography: assets/references.bib
+csl: assets/apa.csl
+---
+
+## Prompt to screen papers based on title and abstract [based on @SyrianiEtAl2024]
+
+- Text analysis and recommendations
+- Zero-shot prompting
+- LLMs
+- Extract abstracts locally and provide them with the prompt 7
+
+```Markdown
+Context: I am screening papers for a systematic literature review.
+The topic of the systematic review is [add topic here].
+The study should focus exclusively on this topic.
+Instruction: Decide if the article should be included or excluded
+from the systematic review. I give the title and abstract of the
+article as input. Only answer include or exclude. Be lenient.
+I prefer including papers by mistake rather than excluding them by mistake.
+
+Task i:
+
+- Title: “Twelve tips to leverage AI for efficient and effective medical question generation”
+- Abstract: “Crafting quality assessment questions in medical education […]”
+```
+
+## Prompt for language translation in the screening process
+
+- Text translation
+- Zero-shot prompting
+- Use GROBID to convert PDF documents to TEI format and provide the TEI (xml) files as an input to the LLM 7, 1
+
+```Markdown
+Read each xml document, which has the namespace http://www.tei-c.org/ns/1.0.
+Extract the following items:
+    • title, which is in TEI/teiHeader/fileDesc/titelStmt/title (display in title case)
+    • abstract, which is in TEI/teiHeader/profileDesc/abstract/div (using all p tags)
+    • keywords, which are in TEI/teiHeader/profileDesc/textClass/keywords
+Translate the abstract to English (if necessary).
+Arrange all results in a Markdown table. Add a “screening” column.
+```

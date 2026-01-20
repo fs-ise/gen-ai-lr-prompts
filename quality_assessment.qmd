@@ -1,0 +1,18 @@
+---
+title: "Quality assessment"
+---
+
+
+## Prompt for the basic evaluation of the methodological approach
+
+- Text analysis and recommendations
+- Zero-shot prompting
+- LLMs with file upload and large context window (> 100,000 tokens)
+- Upload a paper (PDF) 7
+
+```Markdown
+Your task is to analyze the provided research study and identify its
+study design (e.g., experiment, case study, survey, archival study),
+sample size, data collection methods, and statistical analyses.
+Present these four characteristics in a Markdown table.
+```

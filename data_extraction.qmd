@@ -1,0 +1,62 @@
+---
+title: "Data extraction"
+---
+
+## Prompt for chain-of-density summarization
+
+- Text summarization
+- Chain-of-thought prompting
+- LLMs with file upload and large context window (> 100,000 tokens)
+- Upload a paper (PDF) 7
+
+```Markdown
+You will generate increasingly concise, entity-dense summaries of the
+above article. The summaries should be written for an academic audience.
+Repeat the following 2 steps 5 times.
+- Step 1. Identify 1-3 informative entities (“;” delimited) from the
+  article which are missing from the previously generated summary.
+- Step 2. Write a new, denser summary of identical length which covers
+  every entity and detail from the previous summary plus the missing entities.
+A missing entity is:
+    - Relevant: to the main story.
+    - Specific: descriptive yet concise (5 words or fewer).
+    - Novel: not in the previous summary.
+    - Faithful: present in the article.
+Anywhere: located anywhere in the article.
+```
+
+## Python pseudocode for structured data extraction from tables
+
+- Data extraction
+- Zero-shot prompting
+- LLMs with file upload and large context window (> 100,000 tokens)
+- Upload a paper (PDF) 7
+
+```Markdown
+1. Define utility functions:
+    - md_to_df(Markdown_text): Converts Markdown table text to a
+      pandas DataFrame.
+    - extract_table_from_image(url): Extracts table data from an
+      image at the given URL and returns as Markdown text.
+2. Define the MarkdownDataFrame data structure:
+    - Use pandas.DataFrame as the base structure.
+    - Apply a BeforeValidator that converts Markdown text to a
+      DataFrame (md_to_df function).
+    - Apply a PlainSerializer to convert a DataFrame to Markdown
+      text (using DataFrame.to_Markdown() method).
+    - Define JSON schema for validation.
+3. Define the Table class with two attributes: caption and dataframe:
+    - caption: String to store the table’s caption.
+    - dataframe: Stores the table data as a MarkdownDataFrame,
+      which is essentially a pandas DataFrame that can serialize
+      to/from Markdown.
+4. Main process to extract and represent a table from an image:
+    - Call extract_table_from_image(url) to extract the Markdown
+      representation of the table from the image.
+    - Create an instance of the Table class, setting caption as needed
+      and dataframe as the Markdown representation converted to a DataFrame.
+    - Use the Table instance to manipulate or access the table’s data
+      and caption.
+    - To serialize the Table instance’s dataframe back to Markdown, use
+      the PlainSerializer functionality implicitly via the class’s structure.
+```
