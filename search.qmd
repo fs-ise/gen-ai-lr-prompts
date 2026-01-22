@@ -4,12 +4,17 @@ bibliography: assets/references.bib
 csl: assets/apa.csl
 ---
 
-## Prompt to explore prior research using a tabular overview
+## Explore prior research using a tabular overview
 
+|                        |                                                                                     |
+|------------------------|-------------------------------------------------------------------------------------|
+| **GenAI capability**   | Text summarization                                                                  |
+| **Prompting strategy** | Retrieval-augmented generation (RAG)                                                |
+| **Requirements**       | LLMs with Retrieval Augmented Generation functionality, such as Consensus or Elicit |
+| **Academic study**     | @WagnerEtAl2026                                                                     |
+:  {tbl-colwidths="[30,70]"}
 
-- Text summarization
-- Retrieval-augmented generation (RAG)
-- LLMs with Retrieval Augmented Generation functionality, such as Consensus or Elicit
+**Prompt**
 
 ```Markdown
 How does [add label of variable] affect the relationship between
@@ -20,11 +25,17 @@ Summarize relevant empirical papers with an abstract summary,
 the research method, and the key findings.
 ```
 
-### Prompt to suggest an initial search query [based on @WangEtAl2023]
+### Suggest an initial search query
 
-- Content generation
-- Few-shot prompting
-- LLMs
+|                        |                      |
+|------------------------|----------------------|
+| **GenAI capability**   | Content generation   |
+| **Prompting strategy** | Few-shot prompting   |
+| **Requirements**       | LLMs                 |
+| **Academic study**     | @WangEtAl2023        |
+:  {tbl-colwidths="[30,70]"}
+
+**Prompt**
 
 ```Markdown
 You are an information specialist who develops Boolean queries for systematic reviews.
@@ -41,8 +52,8 @@ individual performance at work”, please generate a highly effective systematic
 review Boolean query for the information need.
 ```
 
-> **Response**
-> 
+**Example output**
+ 
 > For the information need "The effect of LLM on individual performance at work," we can generate a Boolean query for Web of Science (or similar databases) using a combination of keywords and Boolean operators. Here is an effective query to retrieve relevant documents while minimizing irrelevant ones:
 > 
 > TI=("Large Language Model*" OR "LLM" OR "GPT" OR "Generative Pretrained Transformer" OR "Transformer model*") AND TI=("individual performance" OR "employee performance" OR "work performance" OR "job performance" OR "productivity" OR "efficiency" OR "output") AND TI=("work" OR "job" OR "employment" OR "organization" OR "labor")

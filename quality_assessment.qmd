@@ -1,14 +1,22 @@
 ---
 title: "Quality assessment"
+bibliography: assets/references.bib
+csl: assets/apa.csl
 ---
 
+## Basic evaluation of the methodological approach
 
-## Prompt for the basic evaluation of the methodological approach
+|                        |                                                                    |
+|------------------------|--------------------------------------------------------------------|
+| **GenAI capability**   | Text analysis and recommendations                                  |
+| **Prompting strategy** | Zero-shot prompting                                                |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens)  |
+| **Academic study**     | @WagnerEtAl2026                                                    |
+:  {tbl-colwidths="[30,70]"}
 
-- Text analysis and recommendations
-- Zero-shot prompting
-- LLMs with file upload and large context window (> 100,000 tokens)
-- Upload a paper (PDF) 7
+**Preparation**: Upload a selection of relevant papers (PDFs).
+
+**Prompt**
 
 ```Markdown
 Your task is to analyze the provided research study and identify its

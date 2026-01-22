@@ -1,12 +1,20 @@
 ---
 title: "Data analysis"
+bibliography: assets/references.bib
+csl: assets/apa.csl
 ---
 
-## Prompt to develop Python code for a meta-analysis
+## Develop Python code for a meta-analysis
 
-- Code generation
-- Zero-shot prompting
-- LLMs
+|                        |                          |
+|------------------------|--------------------------|
+| **GenAI capability**   | Code generation          |
+| **Prompting strategy** | Zero-shot prompting      |
+| **Requirements**       | LLMs                     |
+| **Academic study**     | @WagnerEtAl2026          |
+:  {tbl-colwidths="[30,70]"}
+
+**Prompt**
 
 ```Markdown
 As a Python programming and statistical analysis expert with a detailed 
@@ -34,13 +42,19 @@ ensuring the generated Python code adheres to best practices for readability
 and efficiency.
 ```
 
+## Reframe theoretical questions based on Socratic argumentation
 
-## Prompt to reframe theoretical questions based on Socratic argumentation
+|                        |                                                                      |
+|------------------------|----------------------------------------------------------------------|
+| **GenAI capability**   | Dialogue and conversation                                            |
+| **Prompting strategy** | Exploratory prompting                                                |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens)    |
+| **Academic study**     | @DingEtAl2024                                                      |
+:  {tbl-colwidths="[30,70]"}
 
-- Dialogue and conversation
-- Exploratory prompting
-- LLMs with file upload and large context window (> 100,000 tokens)
-- Upload a selection of relevant papers (PDFs) 7
+**Preparation**: Upload a selection of relevant papers (PDFs).
+
+**Prompt**
 
 ```Markdown
 You are an AI assistant capable of having in-depth Socratic style conversations

@@ -4,44 +4,77 @@ title: "Contributing"
 
 ## Guidelines
 
-**Prompts**  
+
 - Prompts reported in published and peer-reviewed papers only.  
+- Prompts from influential preprints may also be considered, provided their effectiveness has been clearly demonstrated.  
 - If a prompt has been used in practice (e.g., to assist in specific review tasks), briefly describe the use case and its outcomes.  
-- Indicate any limitations or specific requirements for the prompt to work effectively (e.g., tools needed, data formats).
-- Prompts from influential preprints may also be considered, provided their effectiveness has been clearly demonstrated.
+- Indicate any limitations or specific requirements for the prompt to work effectively (e.g., tools needed, data formats).  
 - Contributions should include information on how the prompt was evaluated (e.g., in academic papers, systematic reviews, or practical use cases).  
 - If applicable, include links to resources showcasing the evaluation process or results.
 
 ## Adding a New Prompt
 
-If you would like to add a new prompt, follow these steps:  
+If you would like to add a new prompt, follow these steps:
 
-1. Click the [edit button](https://github.com/digital-work-lab/gen-ai-lr-prompts/edit/main/README.md).  
-2. Add your contribution in Markdown format under the appropriate section. Include:  
-   - The intended use case (e.g., summarization, Boolean query generation).  
-   - The prompt text.  
-   - An example output as a quote.
-   - A reference with a brief description of its application and evaluation.  
-3. Use the "Preview changes" tab to ensure your contribution is formatted correctly.  
-4. Provide a name for your proposed change and an optional description. Indicate that you would like to "Create a new branch for this commit and start a pull request," then click "Propose file change."
+1. Navigate to the page displaying related prompts (e.g., for the [search](search.html)).
+1. Click the **Edit this page** button.  
+2. Add your contribution in Markdown format. Include:
+   - The intended use case (e.g., summarization, Boolean query generation).
+   - The prompt text.
+   - An example output (where feasible).
+   - A reference to the academic paper evaluating the prompt to the `assets/references.bib`.
+   - Add a link to the reference (e.g., `@SyrianiEtAl2024`) brief description of its application and evaluation.
+3. Use the **Preview changes** tab to ensure your contribution is formatted correctly.
+4. Provide a short name and (optionally) a description for your proposed change.
+5. Select **Create a new branch for this commit and start a pull request**, then click **Propose file change**.
 
+## Prompt Template
 
-## Prompt template
+Each prompt should be documented using the following structure.
+The example below illustrates the expected level of detail and formatting.
 
-> Role: You are [ROLE].
->
-> Context: [CONTEXT]
->
-> Task: [WHAT YOU WANT]
->
-> Constraints:
-> - Use only the provided context; if missing info, list questions first
-> - Cite uncertainties explicitly
-> - Do not invent citations
->
-> Output format:
-> - [BULLETS/TABLE/JSON]
->
-> Quality checks:
-> - [CHECKLIST]
+~~~Markdown
 
+### [Short descriptive title of the prompt]
+
+|                        |                                                       |
+|------------------------|-------------------------------------------------------|
+| **GenAI capability**   | [e.g., Content generation, Data extraction, Analysis] |
+| **Prompting strategy** | [e.g., Few-shot prompting, Exploratory prompting]     |
+| **Requirements**       | [e.g., LLMs, file upload, large context window]       |
+| **Academic study**     | [Citation]                                            |
+:  {tbl-colwidths="[30,70]"}
+
+**Prompt**
+
+```Markdown
+[Full prompt text as used with the LLM.
+Write the prompt exactly as it should be executed,
+including role framing, task description, and any
+examples or constraints.]
+```
+
+**Example output**
+*(Include where feasible; omit if not meaningful for the prompt type.)*
+
+> [Representative excerpt of the model output, formatted as a quote.]
+
+~~~
+
+### Notes for contributors
+
+- Use clear, descriptive titles (e.g., “Suggest an initial search query”).
+- Prompts should be self-contained and executable.
+- Example outputs should be illustrative, not exhaustive.
+- If no example output is provided, briefly explain why (in the pull request).
+
+## License and Contribution Terms
+
+By submitting a contribution to this repository, you agree that:
+
+- Your contribution is **your original work** or that you have the right to share it.
+- Your contribution will be made available under the **same license as this repository** (see `LICENSE`).
+- You are **not transferring copyright**; you are granting permission for your contribution to be used, modified, and redistributed under the repository’s license.
+- References to external publications do **not** imply that those publications are licensed under the repository’s license.
+
+If you have questions about licensing or attribution, please open an issue before submitting a pull request.

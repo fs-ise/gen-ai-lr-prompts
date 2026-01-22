@@ -1,13 +1,22 @@
 ---
 title: "Problem formulation"
+bibliography: assets/references.bib
+csl: assets/apa.csl
 ---
 
-##  Prompt to identify prior review papers based on citation context
+##  Identify prior review papers based on citation context
 
-- Data extraction
-- Exploratory prompting
-- LLMs with file upload and large context window (> 100,000 tokens a)
-- Upload a selection of relevant papers (PDFs)1
+|                        |                                                                   |
+|------------------------|-------------------------------------------------------------------|
+| **GenAI capability**   | Data extraction                                                   |
+| **Prompting strategy** | Exploratory prompting                                             |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens) |
+| **Academic study**     | @WagnerEtAl2026                                                   |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Upload a selection of relevant papers (PDFs).
+
+**Prompt**
 
 ```Markdown
 Considering the in-text citations of each paper, do the papers refer to
@@ -16,12 +25,19 @@ state explicitly when you encounter problems in extracting text from the
 PDF document.
 ```
 
-## Prompt to extract concept definitions
+## Extract concept definitions
 
-- Data extraction
-- Zero-shot prompting
-- LLMs with file upload and large context window (> 100,000 tokens)
-- Upload a selection of relevant papers (PDFs)7
+|                        |                                                                   |
+|------------------------|-------------------------------------------------------------------|
+| **GenAI capability**   | Data extraction                                                   |
+| **Prompting strategy** | Zero-shot prompting                                               |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens) |
+| **Academic study**     | @WagnerEtAl2026                                                   |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Upload a selection of relevant papers (PDFs).
+
+**Prompt**
 
 ```Markdown
 From the PDFs provided, extract the definitions for [add description here].
@@ -29,12 +45,19 @@ Provide a direct quote if remote work is defined in the paper. If there is none,
 state that there is no clear definition of [add topic label here]in the PDF.
 ```
 
-## Prompt to assess the fit of a selected review type
+## Assess the fit of a selected review type
 
-- Text analysis and recommendations
-- Exploratory prompting
-- LLMs with file upload and large context window (> 100,000 tokens)
-- Upload a selection of relevant papers (PDFs) 7
+|                        |                                                                   |
+|------------------------|-------------------------------------------------------------------|
+| **GenAI capability**   | Text analysis and recommendations                                 |
+| **Prompting strategy** | Exploratory prompting                                             |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens) |
+| **Academic study**     | @WagnerEtAl2026                                                   |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Upload a selection of relevant papers (PDFs).
+
+**Prompt**
 
 ```Markdown
 Definition: A "qualitative systematic review" aims at collecting and

@@ -4,12 +4,19 @@ bibliography: assets/references.bib
 csl: assets/apa.csl
 ---
 
-## Prompt to screen papers based on title and abstract [based on @SyrianiEtAl2024]
+## Screen papers based on title and abstract
 
-- Text analysis and recommendations
-- Zero-shot prompting
-- LLMs
-- Extract abstracts locally and provide them with the prompt 7
+|                        |                                         |
+|------------------------|-----------------------------------------|
+| **GenAI capability**   | Text analysis and recommendations       |
+| **Prompting strategy** | Zero-shot prompting                     |
+| **Requirements**       | LLMs                                    |
+| **Academic study**     | @SyrianiEtAl2024                        |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Extract abstracts locally and provide them with the prompt.
+
+**Prompt**
 
 ```Markdown
 Context: I am screening papers for a systematic literature review.
@@ -26,11 +33,20 @@ Task i:
 - Abstract: “Crafting quality assessment questions in medical education […]”
 ```
 
-## Prompt for language translation in the screening process
+## Language translation in the screening process
 
-- Text translation
-- Zero-shot prompting
-- Use GROBID to convert PDF documents to TEI format and provide the TEI (xml) files as an input to the LLM 7, 1
+
+|                        |                                         |
+|------------------------|-----------------------------------------|
+| **GenAI capability**   | Text translation                        |
+| **Prompting strategy** | Zero-shot prompting                     |
+| **Requirements**       | LLMs                                    |
+| **Academic study**     | @WagnerEtAl2026                         |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Use GROBID to convert PDF documents to TEI format and provide the TEI (xml) files as an input to the LLM.
+
+**Prompt**
 
 ```Markdown
 Read each xml document, which has the namespace http://www.tei-c.org/ns/1.0.

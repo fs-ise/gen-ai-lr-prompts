@@ -2,4 +2,24 @@
 title: "About"
 ---
 
-People...
+## Editorial Committee
+
+**Gerit Wagner, Ph.D.**  
+Assistant Professor  
+University of Bamberg
+
+**Julian Prester, Ph.D.**  
+Lecturer  
+University of Sydney
+
+**Reza Mousavi, Ph.D.**  
+Assistant Professor  
+University of Virginia
+
+**Roman Lukyanenko, Ph.D.**  
+Associate Professor  
+University of Virginia
+
+**Guy Paré, Ph.D.**  
+Full Professor  
+HEC Montréal

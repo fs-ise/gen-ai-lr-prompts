@@ -1,13 +1,22 @@
 ---
 title: "Data extraction"
+bibliography: assets/references.bib
+csl: assets/apa.csl
 ---
 
-## Prompt for chain-of-density summarization
+## Chain-of-density summarization
 
-- Text summarization
-- Chain-of-thought prompting
-- LLMs with file upload and large context window (> 100,000 tokens)
-- Upload a paper (PDF) 7
+|                        |                                                                    |
+|------------------------|--------------------------------------------------------------------|
+| **GenAI capability**   | Text summarization                                                 |
+| **Prompting strategy** | Chain-of-thought prompting                                         |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens)  |
+| **Academic study**     | @AdamsEtAl2023                                                    |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Upload a paper (PDFs).
+
+**Prompt**
 
 ```Markdown
 You will generate increasingly concise, entity-dense summaries of the
@@ -27,10 +36,17 @@ Anywhere: located anywhere in the article.
 
 ## Python pseudocode for structured data extraction from tables
 
-- Data extraction
-- Zero-shot prompting
-- LLMs with file upload and large context window (> 100,000 tokens)
-- Upload a paper (PDF) 7
+|                        |                                                                    |
+|------------------------|--------------------------------------------------------------------|
+| **GenAI capability**   | Data extraction                                                    |
+| **Prompting strategy** | Zero-shot prompting                                                |
+| **Requirements**       | LLMs with file upload and large context window (> 100,000 tokens)  |
+| **Academic study**     | @WagnerEtAl2026                                                    |
+:  {tbl-colwidths="[30,70]"}
+
+**Preparation**: Upload a paper (PDFs).
+
+**Prompt**
 
 ```Markdown
 1. Define utility functions:
