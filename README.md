@@ -1,4 +1,4 @@
-# GenAI Prompts for Literature Reviews
+# GenAI Prompts for Literature Reviews: A Curated Repository
 
 ## Overview
 
@@ -37,7 +37,7 @@ For details on how to contribute prompts to each stage, see
 
 If you use or adapt content from this repository, please cite:
 
-> **TBA**
+> Wagner, G., Prester, J., Mousavi, R., Lukyanenko, R., & Paré, G. (2026). GenAI prompts for literature reviews: A curated repository. https://fs-ise.github.io/gen-ai-lr-prompts/
 
 ## License
 
