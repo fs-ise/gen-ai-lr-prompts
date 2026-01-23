@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this curated prompt repository, please cite it as below."
+title: "GenAI Prompts for Literature Reviews: A Curated Repository"
+type: software
+authors:
+  - family-names: Wagner
+    given-names: Gerit
+  - family-names: Prester
+    given-names: Julian
+  - family-names: Mousavi
+    given-names: Reza
+  - family-names: Lukyanenko
+    given-names: Roman
+  - family-names: "Paré"
+    given-names: Guy
+year: 2026
+date-released: 2026-01-01
+url: "https://fs-ise.github.io/gen-ai-lr-prompts/"
+repository-code: "https://github.com/fs-ise/genai-prompts-literature-reviews"
+license: MIT
+keywords:
+  - literature reviews
+  - evidence synthesis
+  - prompts
+  - generative AI
+  - ChatGPT
+  - research methods
